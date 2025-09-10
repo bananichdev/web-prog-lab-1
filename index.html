@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин panindv</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Магазин panindv</h1>
+    </header>
+
+    <main class="main-content">
+        <section class="products">
+            <h2>Каталог товаров</h2>
+            <div class="product-grid" id="product-grid">
+            </div>
+        </section>
+
+        <aside class="cart-sidebar">
+            <h2>Корзина</h2>
+            <div class="cart-items" id="cart-items">
+            </div>
+            <div class="cart-total">
+                <p>Итого: <span id="cart-total-price">0</span> руб.</p>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Оформить заказ</button>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Магазин panindv. Все права защищены.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="modal.html" frameborder="0" id="modal-iframe"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
